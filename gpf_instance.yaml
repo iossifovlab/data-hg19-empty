@@ -1,34 +1,6 @@
-vars:
-  instance_id: data_hg19_empty
-
 reference_genome:
   resource_id: "hg19/GATK_ResourceBundle_5777_b37_phiX174/genome"
 
 gene_models:
   resource_id: "hg19/GATK_ResourceBundle_5777_b37_phiX174/gene_models/refGene_v20190211"
-
-
-
-# genotype_storage:
-#   default: genotype_filesystem
-
-# storage:
-#   genotype_filesystem:
-#     dir: "%($DAE_DB_DIR)s/studies"
-#     storage_type: filesystem
-#   genotype_impala:
-#     dir: "%($DAE_DB_DIR)s/work/"
-#     hdfs:
-#       base_dir: /user/data_hg19_startup/studies
-#       host: localhost
-#       port: 8020
-#       replication: 1
-#     impala:
-#       db: "%(instance_id)s"
-#       hosts:
-#       - localhost
-#       pool_size: 3
-#       port: 21050
-#     storage_type: impala
-
 
