@@ -1,6 +1,33 @@
+vars:
+  instance_id: data_hg19_empty
+
 reference_genome:
-  resource_id: "hg19/GATK_ResourceBundle_5777_b37_phiX174/genome"
+  resource_id: "hg19/genomes/GATK_ResourceBundle_5777_b37_phiX174"
 
 gene_models:
-  resource_id: "hg19/GATK_ResourceBundle_5777_b37_phiX174/gene_models/refGene_v20190211"
+  resource_id: "hg19/gene_models/refGene_v20190211"
 
+# grr:
+#   id: "%(instance_id)s"
+#   type: "url"
+#   url: "https://www.iossifovlab.com/distribution/public/genomic-resources-repository/"
+#   cache_dir: "%($HOME)s/grrCache"
+
+# genotype_storage:
+#   default: genotype_impala
+
+# storage:
+#   genotype_impala:
+#     dir: "%($DAE_DB_DIR)s/work/"
+#     hdfs:
+#       base_dir: /user/%(instance_id)s/studies
+#       host: localhost
+#       port: 8020
+#       replication: 1
+#     impala:
+#       db: "%(instance_id)s"
+#       hosts:
+#       - localhost
+#       pool_size: 3
+#       port: 21050
+#     storage_type: impala
